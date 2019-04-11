@@ -1,0 +1,2 @@
+module BattlemechsHelper
+end

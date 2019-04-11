@@ -1,0 +1,10 @@
+= form_for @battlemech do |f|
+  - if @battlemech.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@battlemech.errors.count, "error")} prohibited this battlemech from being saved:"
+      %ul
+        - @battlemech.errors.full_messages.each do |message|
+          %li= message
+
+  .actions
+    = f.submit 'Save'

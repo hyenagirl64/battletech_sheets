@@ -1,0 +1,2 @@
+class Battlemech < ApplicationRecord
+end

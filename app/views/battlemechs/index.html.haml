@@ -1,0 +1,19 @@
+%h1 Listing battlemechs
+
+%table
+  %thead
+    %tr
+      %th
+      %th
+      %th
+
+  %tbody
+    - @battlemechs.each do |battlemech|
+      %tr
+        %td= link_to 'Show', battlemech
+        %td= link_to 'Edit', edit_battlemech_path(battlemech)
+        %td= link_to 'Destroy', battlemech, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Battlemech', new_battlemech_path
