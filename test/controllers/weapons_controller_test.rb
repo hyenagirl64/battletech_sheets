@@ -17,7 +17,7 @@ class WeaponsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create weapon" do
     assert_difference('Weapon.count') do
-      post weapons_url, params: { weapon: {  } }
+      post weapons_url, params: { weapon: { ammoperton: @weapon.ammoperton, damage: @weapon.damage, heat: @weapon.heat, longrange: @weapon.longrange, medrange: @weapon.medrange, minrange: @weapon.minrange, name: @weapon.name, shrtrange: @weapon.shrtrange, tohitmod: @weapon.tohitmod, types: @weapon.types } }
     end
 
     assert_redirected_to weapon_url(Weapon.last)
@@ -34,7 +34,7 @@ class WeaponsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update weapon" do
-    patch weapon_url(@weapon), params: { weapon: {  } }
+    patch weapon_url(@weapon), params: { weapon: { ammoperton: @weapon.ammoperton, damage: @weapon.damage, heat: @weapon.heat, longrange: @weapon.longrange, medrange: @weapon.medrange, minrange: @weapon.minrange, name: @weapon.name, shrtrange: @weapon.shrtrange, tohitmod: @weapon.tohitmod, types: @weapon.types } }
     assert_redirected_to weapon_url(@weapon)
   end
 

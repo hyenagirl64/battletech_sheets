@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_11_225814) do
+ActiveRecord::Schema.define(version: 2019_04_11_233110) do
 
   create_table "battlemechs", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -18,6 +18,16 @@ ActiveRecord::Schema.define(version: 2019_04_11_225814) do
   end
 
   create_table "weapons", force: :cascade do |t|
+    t.string "name"
+    t.string "types"
+    t.string "heat"
+    t.string "damage"
+    t.integer "minrange"
+    t.integer "shrtrange"
+    t.integer "medrange"
+    t.integer "longrange"
+    t.integer "ammoperton"
+    t.integer "tohitmod"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

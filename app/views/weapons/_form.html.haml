@@ -6,5 +6,35 @@
         - @weapon.errors.full_messages.each do |message|
           %li= message
 
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :types
+    = f.text_field :types
+  .field
+    = f.label :heat
+    = f.text_field :heat
+  .field
+    = f.label :damage
+    = f.text_field :damage
+  .field
+    = f.label :minrange
+    = f.text_field :minrange
+  .field
+    = f.label :shrtrange
+    = f.text_field :shrtrange
+  .field
+    = f.label :medrange
+    = f.text_field :medrange
+  .field
+    = f.label :longrange
+    = f.text_field :longrange
+  .field
+    = f.label :ammoperton
+    = f.text_field :ammoperton
+  .field
+    = f.label :tohitmod
+    = f.number_field :tohitmod
   .actions
     = f.submit 'Save'

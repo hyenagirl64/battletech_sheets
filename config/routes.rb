@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :battlemechs
   resources :weapons
+  resources :battlemechs
   
   root 'battlemechs#index'
 end
