@@ -25,7 +25,7 @@ class BattlemechsController < ApplicationController
   # POST /battlemechs.json
   def create
     @battlemech = Battlemech.new(battlemech_params)
-
+    @params = battlemech_params
     respond_to do |format|
       if @battlemech.save
         format.html { redirect_to @battlemech, notice: 'Battlemech was successfully created.' }
@@ -69,6 +69,10 @@ class BattlemechsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def battlemech_params
-      params.fetch(:battlemech, {})
+      params.require(:battlemech).permit(:name, :serial, :tech_base, :battle_value, :cost, :tonnage, :year_made, :base_walk, 
+                                        :base_run, :base_jump, :base_heat_sinks, :hp_head_armor, :hp_ct_front_armor, :hp_ct_rear_armor, 
+                                        :hp_lt_front_armor, :hp_lt_rear_armor, :hp_rt_front_armor, :hp_rt_rear_armor, :hp_la_armor, 
+                                        :hp_ll_armor, :hp_ra_armor, :hp_rl_armor, :hp_head_internal, :hp_ct_internal, :hp_lt_internal, 
+                                        :hp_rt_internal, :hp_la_internal, :hp_ll_internal, :hp_ra_internal, :hp_rl_internal)
     end
 end
