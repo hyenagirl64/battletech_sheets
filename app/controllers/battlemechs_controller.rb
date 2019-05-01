@@ -25,7 +25,6 @@ class BattlemechsController < ApplicationController
   # POST /battlemechs.json
   def create
     @battlemech = Battlemech.new(battlemech_params)
-    @params = battlemech_params
     respond_to do |format|
       if @battlemech.save
         format.html { redirect_to @battlemech, notice: 'Battlemech was successfully created.' }
