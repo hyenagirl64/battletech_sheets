@@ -1,5 +1,19 @@
 %p#notice= notice
-
+%p
+  %b Type:
+  = "#{@battlemech.serial} #{@battlemech.name}"
+%p
+  %b Tech-Base:
+  = "#{@battlemech.tech_base} #{@battlemech.year_made}"
+%p
+  %b Tonnage:
+  = @battlemech.tonnage
+%p
+  %b Battle Value:
+  = @battlemech.battle_value
+%p
+  %b Cost:
+  = "#{@battlemech.cost} c-bills"
 
 = link_to 'Edit', edit_battlemech_path(@battlemech)
 \|

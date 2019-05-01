@@ -5,6 +5,27 @@
       %ul
         - @battlemech.errors.full_messages.each do |message|
           %li= message
-
+       
+  .field
+    = f.label :serial
+    = f.text_field :serial
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :tech_base
+    = f.text_field :tech_base
+  .field
+    = f.label :year_made
+    = f.number_field :year_made
+  .field
+    = f.label :tonnage
+    = f.number_field :tonnage
+  .field
+    = f.label :battle_value
+    = f.number_field :battle_value
+  .field
+    = f.label :cost
+    = f.number_field :cost
   .actions
     = f.submit 'Save'

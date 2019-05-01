@@ -3,6 +3,12 @@
 %table
   %thead
     %tr
+      %th Type
+      %th Tech
+      %th Year
+      %th Ton
+      %th BV
+      %th Cost
       %th
       %th
       %th
@@ -10,6 +16,12 @@
   %tbody
     - @battlemechs.each do |battlemech|
       %tr
+        %td= "#{battlemech.serial} #{battlemech.name}"
+        %td= battlemech.tech_base
+        %td= battlemech.year_made
+        %td= battlemech.tonnage
+        %td= battlemech.battle_value
+        %td= battlemech.cost
         %td= link_to 'Show', battlemech
         %td= link_to 'Edit', edit_battlemech_path(battlemech)
         %td= link_to 'Destroy', battlemech, method: :delete, data: { confirm: 'Are you sure?' }
