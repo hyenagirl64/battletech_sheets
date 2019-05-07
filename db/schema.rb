@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_29_205538) do
+ActiveRecord::Schema.define(version: 2019_05_07_215757) do
 
   create_table "battlemechs", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(version: 2019_04_29_205538) do
     t.index ["year_made"], name: "index_battlemechs_on_year_made"
   end
 
-  create_table "weapons", force: :cascade do |t|
+  create_table "components", force: :cascade do |t|
     t.string "name"
     t.string "types"
     t.string "heat"

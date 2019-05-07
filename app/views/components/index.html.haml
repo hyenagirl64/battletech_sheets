@@ -1,0 +1,39 @@
+%h1 Listing Components
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Types
+      %th Heat
+      %th Damage
+      %th Min Range
+      %th Shrt Range
+      %th Med Range
+      %th Long Range
+      %th Ammo/Ton
+      %th To Hit
+      %th
+      %th
+      %th
+
+  %tbody
+    - @components.each do |component|
+      %tr
+        %td= component.name
+        %td= component.types
+        %td= component.heat
+        %td= component.damage
+        %td= component.minrange
+        %td= component.shrtrange
+        %td= component.medrange
+        %td= component.longrange
+        %td= component.ammoperton
+        %td= component.tohitmod
+        %td= link_to 'Show', component
+        %td= link_to 'Edit', edit_component_path(component)
+        %td= link_to 'Destroy', component, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Component', new_component_path
