@@ -1,0 +1,35 @@
+%p#notice= notice
+%p
+  %b Name:
+  = @component.name
+%p
+  %b Types:
+  = @component.types
+%p
+  %b Heat:
+  = @component.heat
+%p
+  %b Damage:
+  = @component.damage
+%p
+  %b Minimum Range:
+  = @component.minrange
+%p
+  %b Short Range:
+  = @component.shrtrange
+%p
+  %b Medium Range:
+  = @component.medrange
+%p
+  %b Long Range:
+  = @component.longrange
+%p
+  %b Ammo per Ton:
+  = @component.ammoperton
+%p
+  %b To Hit Modifier:
+  = @component.tohitmod
+
+= link_to 'Edit', edit_component_path(@component)
+\|
+= link_to 'Back', components_path
