@@ -17,7 +17,7 @@ class ComponentsController < ApplicationController
     @component = Component.new
   end
 
-  # GET /weapons/1/edit
+  # GET /components/1/edit
   def edit
   end
 

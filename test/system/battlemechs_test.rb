@@ -14,6 +14,14 @@ class BattlemechsTest < ApplicationSystemTestCase
     visit battlemechs_url
     click_on "New Battlemech"
 
+    fill_in "Serial", with: "STEST-XX"
+    fill_in "Name", with: "Systemic"
+    fill_in "Tech base", with: "Inner Sphere"
+    fill_in "Year made", with: 2099
+    fill_in "Tonnage", with: 40
+    fill_in "Battle value", with: 555
+    fill_in "Cost", with: 6000123
+
     click_on "Save"
 
     assert_text "Battlemech was successfully created"
