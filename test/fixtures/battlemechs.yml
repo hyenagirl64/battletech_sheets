@@ -1,11 +1,65 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-# This model initially had no columns defined. If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-# column: value
+one: 
+  name: 'Hussar'
+  serial: 'HSR-300-D'
+  tech_base: 'Inner Sphere'
+  year_made: 3039
+  battle_value: 543
+  cost: 2563340
+  tonnage: 30
+  base_walk: 9
+  base_run: 14
+  base_jump: 0
+  base_heat_sinks: 10 
+  hp_head_armor: 3
+  hp_ct_front_armor: 4
+  hp_ct_rear_armor: 1
+  hp_lt_front_armor: 3
+  hp_lt_rear_armor: 1
+  hp_rt_front_armor: 3
+  hp_rt_rear_armor: 1
+  hp_la_armor: 2
+  hp_ll_armor: 2
+  hp_ra_armor: 2
+  hp_rl_armor: 2
+  hp_head_internal: 3 
+  hp_ct_internal: 10
+  hp_lt_internal: 7
+  hp_rt_internal: 7
+  hp_la_internal: 5
+  hp_ll_internal: 7
+  hp_ra_internal: 5
+  hp_rl_internal: 7
+    
+two: 
+  name: 'Cataphract'
+  serial: 'CTF-1X'
+  tech_base: 'Inner Sphere'
+  year_made: 3025
+  battle_value: 1316
+  cost: 5998054
+  tonnage: 70
+  base_walk: 4
+  base_run: 6
+  base_jump: 0
+  base_heat_sinks: 16 
+  hp_head_armor: 9
+  hp_ct_front_armor: 26
+  hp_ct_rear_armor: 9
+  hp_lt_front_armor: 16
+  hp_lt_rear_armor: 6
+  hp_rt_front_armor: 16
+  hp_rt_rear_armor: 6
+  hp_la_armor: 22
+  hp_ll_armor: 22
+  hp_ra_armor: 22
+  hp_rl_armor: 22
+  hp_head_internal: 3 
+  hp_ct_internal: 22
+  hp_lt_internal: 15
+  hp_rt_internal: 15
+  hp_la_internal: 11
+  hp_ll_internal: 15
+  hp_ra_internal: 11
+  hp_rl_internal: 15
